@@ -13,6 +13,7 @@ items:
             nginx.ingress.kubernetes.io/proxy-body-size: "2048m"
             nginx.ingress.kubernetes.io/proxy-send-timeout: "14400"
             nginx.ingress.kubernetes.io/proxy-read-timeout: "14400"
+            kubernetes.io/ingress.allow-http: "false"
         name: ingress-#{appname}#-leader
         namespace: #{k8s.namespace}#
     spec:
@@ -38,6 +39,7 @@ items:
           nginx.ingress.kubernetes.io/proxy-body-size: "2048m"
           nginx.ingress.kubernetes.io/proxy-send-timeout: "14400"
           nginx.ingress.kubernetes.io/proxy-read-timeout: "14400"
+          kubernetes.io/ingress.allow-http: "false"
         name: ingress-#{appname}#
         namespace: #{k8s.namespace}#
     spec:
