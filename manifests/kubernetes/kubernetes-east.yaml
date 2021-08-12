@@ -62,7 +62,7 @@ items:
                httpGet:
                  path: /
                  port: 8080
-               initialDelaySeconds: 90
+               initialDelaySeconds: 120
                periodSeconds: 5
             readinessProbe:
                httpGet:
@@ -108,7 +108,7 @@ items:
       name: #{k8s.namespace}#-leader
       namespace: #{k8s.namespace}#
     spec:
-      replicas: 0 # tells deployment to run 1 pod matching the template. Changed to 0 from 1 for the east Kubernetes cluster
+      replicas: #{k8s.leaders}# # tells deployment to run 1 pod matching the template. Changed to 0 from 1 for east Kubernetes cluster
       selector:
         matchLabels:
             app: "#{k8s.namespace}#"
@@ -162,7 +162,7 @@ items:
                httpGet:
                  path: /
                  port: 8080
-               initialDelaySeconds: 90
+               initialDelaySeconds: 120
                periodSeconds: 5
             readinessProbe:
                httpGet:
