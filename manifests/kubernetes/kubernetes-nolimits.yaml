@@ -62,7 +62,7 @@ items:
                httpGet:
                  path: /
                  port: 8080
-               initialDelaySeconds: 120
+               initialDelaySeconds: 90
                periodSeconds: 5
             readinessProbe:
                httpGet:
@@ -73,7 +73,7 @@ items:
             resources:
               requests:
                 memory: "#{k8s.memoryrequest_slave}#"
-                cpu: "#{k8s.cpurequest_slave}#"
+#                cpu: "#{k8s.cpurequest_slave}#"
 #              limits:
 #                memory: "#{k8s.memorylimit_slave}#"
 #                cpu: "#{k8s.cpulimit_slave}#"
@@ -162,7 +162,7 @@ items:
                httpGet:
                  path: /
                  port: 8080
-               initialDelaySeconds: 120
+               initialDelaySeconds: 90
                periodSeconds: 5
             readinessProbe:
                httpGet:
@@ -174,7 +174,7 @@ items:
             resources:
               requests:
                 memory: "#{k8s.memoryrequest_leader}#"
-                cpu: "#{k8s.cpurequest_leader}#"
+#                cpu: "#{k8s.cpurequest_leader}#"
 #              limits:
 #                memory: "#{k8s.memorylimit_leader}#" 
 #                cpu: "#{k8s.cpulimit_leader}#"
