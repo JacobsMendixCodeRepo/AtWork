@@ -66,6 +66,8 @@
                 "enabledForDeployment": "[parameters('enabledForDeployment')]",
                 "enabledForTemplateDeployment": "[parameters('enabledForTemplateDeployment')]",
                 "enabledForDiskEncryption": "[parameters('enabledForDiskEncryption')]",
+                "enabledPurgeProtection": "[parameters('enabledPurgeProtection')]",
+                "enabledSoftDelete": "[parameters('enabledSoftDelete')]",
                 "accessPolicies": "[parameters('accessPolicies')]",
                 "tenantId": "[parameters('tenant')]",
                 "sku": {
@@ -73,6 +75,7 @@
                     "family": "A"
                 },
                 "networkAcls": "[parameters('networkAcls')]"
+                "softDeleteRetentionInDays": "[parameters('softDeleteRetentionInDays')]",
             }
         }
     ]
