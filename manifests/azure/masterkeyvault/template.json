@@ -51,10 +51,10 @@
             "metadata": {
                 "description": "The network firewall defined for this vault."
             }
-        }
+        },
         "softDeleteRetentionInDays": {
             "type": "int"
-        },
+        }
     },
     "resources": [
         {
@@ -74,8 +74,8 @@
                     "name": "[parameters('sku')]",
                     "family": "A"
                 },
-                "networkAcls": "[parameters('networkAcls')]"
-                "softDeleteRetentionInDays": "[parameters('softDeleteRetentionInDays')]",
+                "networkAcls": "[parameters('networkAcls')]",
+                "softDeleteRetentionInDays": "[parameters('softDeleteRetentionInDays')]"
             }
         }
     ]
