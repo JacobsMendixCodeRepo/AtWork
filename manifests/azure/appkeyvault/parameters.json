@@ -70,10 +70,10 @@
         "enabledForDiskEncryption": {
             "value": false
         },
-        "enablePurgeProtection": {
+        "enabledPurgeProtection": {
             "value": true
         },
-        "enableSoftDelete": {
+        "enabledSoftDelete": {
             "value": true
         },
         "networkAcls": {
