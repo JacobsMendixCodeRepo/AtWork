@@ -83,9 +83,9 @@
                 "virtualNetworkRules": [],
                 "ipRules": []
             }
-        }
+        },
         "softDeleteRetentionInDays": {
             "value": 90
-        },
+        }
     }
 }
