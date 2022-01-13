@@ -40,10 +40,10 @@
         "enabledForDiskEncryption": {
             "type": "bool"
         },
-        "enablePurgeProtection": {
+        "enabledPurgeProtection": {
             "type": "bool"
         },
-        "enableSoftDelete": {
+        "enabledSoftDelete": {
             "type": "bool"
         },
         "networkAcls": {
@@ -66,8 +66,8 @@
                 "enabledForDeployment": "[parameters('enabledForDeployment')]",
                 "enabledForTemplateDeployment": "[parameters('enabledForTemplateDeployment')]",
                 "enabledForDiskEncryption": "[parameters('enabledForDiskEncryption')]",
-                "enablePurgeProtection": "[parameters('enablePurgeProtection')]",
-                "enableSoftDelete": "[parameters('enableSoftDelete')]",
+                "enabledPurgeProtection": "[parameters('enabledPurgeProtection')]",
+                "enabledSoftDelete": "[parameters('enabledSoftDelete')]",
                 "accessPolicies": "[parameters('accessPolicies')]",
                 "tenantId": "[parameters('tenant')]",
                 "sku": {
