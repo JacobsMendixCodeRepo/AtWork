@@ -51,10 +51,10 @@
             "metadata": {
                 "description": "The network firewall defined for this vault."
             }
-        }
+        },
         "softDeleteRetentionInDays": {
             "type": "int"
-        },
+        }
     },
     "resources": [
         {
@@ -75,7 +75,7 @@
                     "family": "A"
                 },
                 "networkAcls": "[parameters('networkAcls')]"
-                "nsoftDeleteRetentionInDays": "[parameters('softDeleteRetentionInDays')]"
+                "softDeleteRetentionInDays": "[parameters('softDeleteRetentionInDays')]"
             }
         }
     ]
