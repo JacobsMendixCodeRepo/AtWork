@@ -40,12 +40,21 @@
         "enabledForDiskEncryption": {
             "type": "bool"
         },
+        "enabledPurgeProtection": {
+            "type": "bool"
+        },
+        "enabledSoftDelete": {
+            "type": "bool"
+        },
         "networkAcls": {
             "type": "object",
             "metadata": {
                 "description": "The network firewall defined for this vault."
             }
         }
+        "softDeleteRetentionInDays": {
+            "type": "int"
+        },
     },
     "resources": [
         {
