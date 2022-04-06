@@ -42,8 +42,8 @@ items:
           automountServiceAccountToken: false
           securityContext:
             runAsNonRoot: true
-#            runAsUser: 1050
-#            runAsGroup: 999
+            runAsUser: 1001
+            runAsGroup: 0
           imagePullSecrets:
               - name: registry
           containers:
@@ -52,8 +52,8 @@ items:
                privileged: false
                runAsNonRoot: true
                allowPrivilegeEscalation: false
-#               runAsUser: 1050
-#               runAsGroup: 999
+               runAsUser: 1001
+               runAsGroup: 0
             image: #{docker.registry}#/#{docker.repository}#/#{appname}#:#{Release.Artifacts.DockerBuild.SourceVersion}#-#{Release.Artifacts.DockerBuild.BuildId}#
             ports:
             - containerPort: 8080
@@ -142,8 +142,8 @@ items:
           automountServiceAccountToken: false
           securityContext:
             runAsNonRoot: true
-#            runAsUser: 1050
-#            runAsGroup: 999
+            runAsUser: 1001
+            runAsGroup: 0
           imagePullSecrets:
               - name: registry
           containers:
@@ -152,8 +152,8 @@ items:
                privileged: false
                runAsNonRoot: true
                allowPrivilegeEscalation: false
-#               runAsUser: 1050
-#               runAsGroup: 999
+               runAsUser: 1001
+               runAsGroup: 0
             image: #{docker.registry}#/#{docker.repository}#/#{appname}#:#{Release.Artifacts.DockerBuild.SourceVersion}#-#{Release.Artifacts.DockerBuild.BuildId}#
             ports:
             - containerPort: 8080
