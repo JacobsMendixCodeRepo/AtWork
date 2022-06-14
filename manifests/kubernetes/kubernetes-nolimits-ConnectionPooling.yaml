@@ -203,8 +203,6 @@ items:
                 value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"
               - name: "MXRUNTIME_ConnectionPoolingMaxActive"
                 value: "#{customruntime.MXRUNTIME_ConnectionPoolingMaxActive}#"
-              - name: "MXRUNTIME_ConnectionPoolingMinIdle"
-                value: "#{customruntime.MXRUNTIME_ConnectionPoolingMinIdle}#"
             envFrom:
             - configMapRef:
                 name: mendix-config     
