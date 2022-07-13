@@ -100,8 +100,6 @@ items:
                 value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"
               - name: "MXRUNTIME_ConnectionPoolingMaxActive"
                 value: "#{customruntime.MXRUNTIME_ConnectionPoolingMaxActive}#"
-              - name: "MXRUNTIME_com_mendix_core_SameSiteCookies"
-                value: "#{customruntime.MXRUNTIME_com_mendix_core_SameSiteCookies}#"
             envFrom:
             - configMapRef:
                 name: mendix-config
@@ -207,8 +205,6 @@ items:
                 value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"
               - name: "MXRUNTIME_ConnectionPoolingMaxActive"
                 value: "#{customruntime.MXRUNTIME_ConnectionPoolingMaxActive}#"
-              - name: "MXRUNTIME_com_mendix_core_SameSiteCookies"
-                value: "#{customruntime.MXRUNTIME_com_mendix_core_SameSiteCookies}#"
             envFrom:
             - configMapRef:
                 name: mendix-config     
