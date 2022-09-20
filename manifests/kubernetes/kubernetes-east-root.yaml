@@ -98,6 +98,8 @@ items:
                 value: "false"
               - name: "MXRUNTIME_ApplicationRootUrl"
                 value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"
+              - name: "MXRUNTIME_ConnectionPoolingMaxActive"
+                value: "#{customruntime.MXRUNTIME_ConnectionPoolingMaxActive}#"
             envFrom:
             - configMapRef:
                 name: mendix-config
@@ -200,7 +202,9 @@ items:
               - name: MXRUNTIME_com_mendix_storage_PerformDeleteFromStorage
                 value: "false"
               - name: "MXRUNTIME_ApplicationRootUrl"
-                value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"            
+                value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"
+              - name: "MXRUNTIME_ConnectionPoolingMaxActive"
+                value: "#{customruntime.MXRUNTIME_ConnectionPoolingMaxActive}#"
             envFrom:
             - configMapRef:
                 name: mendix-config     
