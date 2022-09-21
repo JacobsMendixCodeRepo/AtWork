@@ -87,7 +87,7 @@ items:
               - name: MXRUNTIME_com_mendix_storage_azure_AccountKey
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_AccountKey}#"
               - name: MXRUNTIME_com_mendix_storage_azure_Container
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_Container}#"                
+                value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_Container}#"
               - name: MXRUNTIME_com_mendix_storage_s3_AccessKeyId
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_AccessKeyId}#"
               - name: MXRUNTIME_com_mendix_storage_s3_SecretAccessKey
@@ -98,6 +98,12 @@ items:
                 value: "false"
               - name: "MXRUNTIME_ApplicationRootUrl"
                 value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"
+              - name: "MXRUNTIME_ConnectionPoolingMaxActive"
+                value: "#{customruntime.MXRUNTIME_ConnectionPoolingMaxActive}#"
+              - name: "MXRUNTIME_http.client.MaxConnectionsPerRoute"
+                value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsPerRoute}#"
+              - name: "MXRUNTIME_http.client.MaxConnectionsTotal"
+                value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsTotal}#"
             envFrom:
             - configMapRef:
                 name: mendix-config
@@ -188,7 +194,7 @@ items:
               - name: MXRUNTIME_com_mendix_storage_azure_AccountKey
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_AccountKey}#"
               - name: MXRUNTIME_com_mendix_storage_azure_Container
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_Container}#"                
+                value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_Container}#"
               - name: MXRUNTIME_com_mendix_storage_s3_AccessKeyId
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_AccessKeyId}#"
               - name: MXRUNTIME_com_mendix_storage_s3_SecretAccessKey
@@ -200,7 +206,13 @@ items:
               - name: MXRUNTIME_com_mendix_storage_PerformDeleteFromStorage
                 value: "false"
               - name: "MXRUNTIME_ApplicationRootUrl"
-                value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"            
+                value: "#{customruntime.MXRUNTIME_ApplicationUrl}#"
+              - name: "MXRUNTIME_ConnectionPoolingMaxActive"
+                value: "#{customruntime.MXRUNTIME_ConnectionPoolingMaxActive}#"
+              - name: "MXRUNTIME_http.client.MaxConnectionsPerRoute"
+                value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsPerRoute}#"
+              - name: "MXRUNTIME_http.client.MaxConnectionsTotal"
+                value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsTotal}#"
             envFrom:
             - configMapRef:
                 name: mendix-config     
