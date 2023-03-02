@@ -104,6 +104,8 @@ items:
                 value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsPerRoute}#"
               - name: "MXRUNTIME_http.client.MaxConnectionsTotal"
                 value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsTotal}#"
+              - name: "MXRUNTIME_com_mendix_core_SameSiteCookies"
+                value: "#{customruntime.MXRUNTIME_com_mendix_core_SameSiteCookies}#"                
             envFrom:
             - configMapRef:
                 name: mendix-config
@@ -213,6 +215,8 @@ items:
                 value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsPerRoute}#"
               - name: "MXRUNTIME_http.client.MaxConnectionsTotal"
                 value: "#{customruntime.MXRUNTIME_http.client.MaxConnectionsTotal}#"
+              - name: "MXRUNTIME_com_mendix_core_SameSiteCookies"
+                value: "#{customruntime.MXRUNTIME_com_mendix_core_SameSiteCookies}#"                
             envFrom:
             - configMapRef:
                 name: mendix-config     
