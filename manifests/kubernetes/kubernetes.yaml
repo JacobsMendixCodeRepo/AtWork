@@ -88,12 +88,12 @@ items:
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_AccountKey}#"
               - name: MXRUNTIME_com_mendix_storage_azure_Container
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_Container}#"                
-              - name: MXRUNTIME_com_mendix_storage_s3_AccessKeyId
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_AccessKeyId}#"
-              - name: MXRUNTIME_com_mendix_storage_s3_SecretAccessKey
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_SecretAccessKey}#"
-              - name: MXRUNTIME_com_mendix_storage_s3_BucketName
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_BucketName}#"
+#              - name: MXRUNTIME_com_mendix_storage_s3_AccessKeyId
+#                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_AccessKeyId}#"
+#              - name: MXRUNTIME_com_mendix_storage_s3_SecretAccessKey
+#                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_SecretAccessKey}#"
+#              - name: MXRUNTIME_com_mendix_storage_s3_BucketName
+#                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_BucketName}#"
               - name: MXRUNTIME_com_mendix_storage_PerformDeleteFromStorage
                 value: "false"
               - name: "MXRUNTIME_ApplicationRootUrl"
@@ -189,14 +189,14 @@ items:
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_AccountKey}#"
               - name: MXRUNTIME_com_mendix_storage_azure_Container
                 value: "#{customruntime.MXRUNTIME_com_mendix_storage_azure_Container}#"                
-              - name: MXRUNTIME_com_mendix_storage_s3_AccessKeyId
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_AccessKeyId}#"
-              - name: MXRUNTIME_com_mendix_storage_s3_SecretAccessKey
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_SecretAccessKey}#"
-              - name: MXRUNTIME_com_mendix_storage_s3_BucketName
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_BucketName}#"
-              - name: MXRUNTIME_com_mendix_storage_s3_EndPoint  
-                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_EndPoint}#"
+#              - name: MXRUNTIME_com_mendix_storage_s3_AccessKeyId
+#                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_AccessKeyId}#"
+#              - name: MXRUNTIME_com_mendix_storage_s3_SecretAccessKey
+#                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_SecretAccessKey}#"
+#              - name: MXRUNTIME_com_mendix_storage_s3_BucketName
+#                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_BucketName}#"
+#              - name: MXRUNTIME_com_mendix_storage_s3_EndPoint  
+#                value: "#{customruntime.MXRUNTIME_com_mendix_storage_s3_EndPoint}#"
               - name: MXRUNTIME_com_mendix_storage_PerformDeleteFromStorage
                 value: "false"
               - name: "MXRUNTIME_ApplicationRootUrl"
